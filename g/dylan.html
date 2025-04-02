@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan Griffiths | Gamer Portfolio</title>
-    <meta name="description" content="Gaming portfolio of Dylan Griffiths">
+    <title>Dylan Griffiths | Gaming Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#ff0000',
-                        secondary: '#000000',
+                        'pixel-red': '#ff0000',
                     }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #000000;
-            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
         }
         .gamer-font {
             font-family: 'Press Start 2P', cursive;
         }
         .pixel-border {
-            border-image: linear-gradient(45deg, #ff0000, #000000) 1;
-            border-width: 4px;
-            border-style: solid;
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.2);
+        }
+        .pixel-card {
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+        .pixel-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 12px 12px 0 rgba(0,0,0,0.2);
+        }
+        .pixel-button {
+            border: 3px solid #000;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .pixel-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+        }
+        .pixel-button:active {
+            transform: translate(0, 0);
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-black shadow-sm z-50 border-b-4 border-primary">
+    <nav class="fixed w-full bg-white shadow-sm z-50 border-b-4 border-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold text-primary gamer-font tracking-tight">DYLAN GRIFFITHS</a>
+                    <a href="#" class="text-xl font-bold text-gray-900 gamer-font">DYLAN GRIFFITHS</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-white hover:text-primary transition gamer-font text-sm">HOME</a>
-                    <a href="#about" class="text-white hover:text-primary transition gamer-font text-sm">ABOUT</a>
-                    <a href="#games" class="text-white hover:text-primary transition gamer-font text-sm">GAMES</a>
-                    <a href="#connect" class="text-white hover:text-primary transition gamer-font text-sm">CONNECT</a>
+                    <a href="#home" class="text-gray-700 hover:text-pixel-red transition gamer-font text-sm">HOME</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-pixel-red transition gamer-font text-sm">ACHIEVEMENTS</a>
+                    <a href="#games" class="text-gray-700 hover:text-pixel-red transition gamer-font text-sm">GAMES</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pixel-red transition gamer-font text-sm">CONTACT</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="mobile-menu-button">
-                        <i class="fas fa-bars text-white text-xl"></i>
+                        <i class="fas fa-bars text-gray-700 text-xl"></i>
                     </button>
                 </div>
             </div>
@@ -60,153 +77,182 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-24 min-h-screen flex items-center bg-black">
+    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-24 min-h-screen flex items-center bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6 gamer-font animate-pulse">> DYLAN GRIFFITHS</h1>
-                <p class="text-xl text-gray-300 mb-8 gamer-font">PRO GAMER | ESPORTS COMPETITOR</p>
-                <div class="max-w-2xl mx-auto">
-                    <p class="text-lg text-gray-400 mb-8">
-                        Dominating leaderboards in Halo, Hearts of Iron IV, and Cities: Skylines. 
-                        Competitive strategist with a passion for gaming excellence.
+            <div class="md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 gamer-font">> DYLAN GRIFFITHS</h1>
+                    <p class="text-xl text-gray-600 mb-8 gamer-font">| Portfolio | </p>
+                    <p class="text-lg text-gray-500 mb-8">
+                       Wsg cuh. Special thanks to alfie terry for letting me use his website to host ts. Soo uhh, this is a website about me. I have attained merits such as the chief scouts gold award, and the arts award in my short lifetime of 14 years. I wouldn't call myself an extremist, however I am deeply passionate about what I belive in and if I like you I'll defend you also. Currently offering my services as a therapist, free of charge, since the only thing that helps me with my mental issues is helping with other people's. Feel free to look around, and check out my bro's main site. Thanks..
                     </p>
+                    <div class="flex space-x-4">
+                        <a href="#achievements" class="px-6 py-3 bg-pixel-red text-white rounded-lg pixel-button gamer-font text-sm">
+                            MY ACHIEVEMENTS
+                        </a>
+                        <a href="#games" class="px-6 py-3 border-2 border-black text-gray-700 rounded-lg pixel-button gamer-font text-sm">
+                            FAVORITE GAMES
+                        </a>
+                    </div>
                 </div>
-                <div class="flex justify-center space-x-4">
-                    <a href="#games" class="px-6 py-3 bg-primary text-black rounded-lg hover:bg-red-700 hover:text-white transition gamer-font text-sm">
-                        VIEW GAMES
-                    </a>
-                    <a href="#connect" class="px-6 py-3 border-2 border-primary text-white rounded-lg hover:bg-gray-800 transition gamer-font text-sm">
-                        JOIN MY TEAM
-                    </a>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded pixel-border bg-pixel-red flex items-center justify-center">
+                        <span class="text-white text-4xl gamer-font">DG</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-900 pixel-border">
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-primary mb-12 gamer-font">> PLAYER PROFILE</h2>
-            <div class="md:flex items-center gap-12">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-lg bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
-                        <span class="text-primary text-6xl gamer-font">DG</span>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12 gamer-font">> ACHIEVEMENTS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Achievement 1 -->
+                <div class="pixel-card bg-white p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pixel-red rounded-full flex items-center justify-center mr-4 pixel-border">
+                            <i class="fas fa-scroll text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 gamer-font">Merits</h3>
                     </div>
+                    <p class="text-gray-600 mb-4">
+                         I have attained merits such as the chief scouts gold award, and the arts award in my short lifetime of 14 years.
+                    </p>
                 </div>
-                <div class="md:w-2/3">
-                    <div class="bg-black p-8 rounded-lg border-2 border-gray-800">
-                        <h3 class="text-xl font-semibold text-primary mb-4 gamer-font">STATS & ACHIEVEMENTS</h3>
-                        <ul class="space-y-4 text-gray-300">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">■</span>
-                                <span>Top 0.5% global rank in Hearts of Iron IV (2000+ hours)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">■</span>
-                                <span>Halo Infinite Onyx Division (Season 3, 4, 5)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">■</span>
-                                <span>Cities: Skylines - Creator of popular transit mods (50k+ downloads)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">■</span>
-                                <span>Twitch affiliate with 500+ followers</span>
-                            </li>
-                        </ul>
+                
+                <!-- Achievement 2 -->
+                <div class="pixel-card bg-white p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pixel-red rounded-full flex items-center justify-center mr-4 pixel-border">
+                            <i class="fas fa-chess text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 gamer-font">HEARTS OF IRON IV</h3>
                     </div>
+                    <p class="text-gray-600 mb-4">
+                        Top 1% global ranking with 2000+ hours of gameplay experience
+                    </p>
+                    <div class="text-sm text-pixel-red font-medium gamer-font">2021-PRESENT</div>
+                </div>
+                
+                <!-- Achievement 3 -->
+                <div class="pixel-card bg-white p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pixel-red rounded-full flex items-center justify-center mr-4 pixel-border">
+                            <i class="fas fa-city text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 gamer-font">CITIES: SKYLINES</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Created popular transit mods with 50,000+ downloads on Steam Workshop
+                    </p>
+                    <div class="text-sm text-pixel-red font-medium gamer-font">2020-2022</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Games Section -->
-    <section id="games" class="py-16 bg-black">
+    <section id="games" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-primary mb-12 gamer-font">> GAME LIBRARY</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12 gamer-font">> GAME SPECIALTIES</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Game 1 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-800 hover:border-primary transition transform hover:-translate-y-2">
-                    <div class="h-48 bg-gradient-to-b from-red-900 to-black flex items-center justify-center">
-                        <i class="fas fa-helmet-battle text-6xl text-primary"></i>
+                <div class="pixel-card bg-gray-100 p-6 text-center">
+                    <div class="h-32 bg-pixel-red flex items-center justify-center mb-4 pixel-border mx-auto" style="width: 200px;">
+                        <i class="fas fa-helmet-battle text-4xl text-white"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-primary mb-2 gamer-font">HALO INFINITE</h3>
-                        <p class="text-gray-300 mb-4">Competitive multiplayer specialist with Onyx rankings in multiple seasons.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-primary text-black rounded gamer-font">FPS</span>
-                            <span class="text-xs px-2 py-1 bg-gray-800 text-primary rounded gamer-font">COMPETITIVE</span>
-                        </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 gamer-font">FPS GAMES</h3>
+                    <p class="text-gray-600 mb-4">
+                        Competitive expertise in Halo, Call of Duty, and tactical shooters
+                    </p>
+                    <div class="flex justify-center gap-2">
+                        <span class="text-xs px-2 py-1 bg-pixel-red text-white rounded gamer-font">FPS</span>
+                        <span class="text-xs px-2 py-1 bg-black text-white rounded gamer-font">COMPETITIVE</span>
                     </div>
                 </div>
                 
                 <!-- Game 2 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-800 hover:border-primary transition transform hover:-translate-y-2">
-                    <div class="h-48 bg-gradient-to-b from-yellow-900 to-black flex items-center justify-center">
-                        <i class="fas fa-chess-rook text-6xl text-primary"></i>
+                <div class="pixel-card bg-gray-100 p-6 text-center">
+                    <div class="h-32 bg-pixel-red flex items-center justify-center mb-4 pixel-border mx-auto" style="width: 200px;">
+                        <i class="fas fa-chess-rook text-4xl text-white"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-primary mb-2 gamer-font">HEARTS OF IRON IV</h3>
-                        <p class="text-gray-300 mb-4">Grand strategy expert with top 0.5% global ranking and modding experience.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-primary text-black rounded gamer-font">STRATEGY</span>
-                            <span class="text-xs px-2 py-1 bg-gray-800 text-primary rounded gamer-font">HISTORICAL</span>
-                        </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 gamer-font">STRATEGY GAMES</h3>
+                    <p class="text-gray-600 mb-4">
+                        Grand strategy and 4X games with focus on historical accuracy
+                    </p>
+                    <div class="flex justify-center gap-2">
+                        <span class="text-xs px-2 py-1 bg-pixel-red text-white rounded gamer-font">STRATEGY</span>
+                        <span class="text-xs px-2 py-1 bg-black text-white rounded gamer-font">HISTORICAL</span>
                     </div>
                 </div>
                 
                 <!-- Game 3 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-800 hover:border-primary transition transform hover:-translate-y-2">
-                    <div class="h-48 bg-gradient-to-b from-blue-900 to-black flex items-center justify-center">
-                        <i class="fas fa-city text-6xl text-primary"></i>
+                <div class="pixel-card bg-gray-100 p-6 text-center">
+                    <div class="h-32 bg-pixel-red flex items-center justify-center mb-4 pixel-border mx-auto" style="width: 200px;">
+                        <i class="fas fa-city text-4xl text-white"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-primary mb-2 gamer-font">CITIES: SKYLINES</h3>
-                        <p class="text-gray-300 mb-4">City-building specialist with popular mods and efficient traffic solutions.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-primary text-black rounded gamer-font">SIMULATION</span>
-                            <span class="text-xs px-2 py-1 bg-gray-800 text-primary rounded gamer-font">CREATIVE</span>
-                        </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 gamer-font">CITY BUILDERS</h3>
+                    <p class="text-gray-600 mb-4">
+                        Urban planning and creative city design with efficient systems
+                    </p>
+                    <div class="flex justify-center gap-2">
+                        <span class="text-xs px-2 py-1 bg-pixel-red text-white rounded gamer-font">SIMULATION</span>
+                        <span class="text-xs px-2 py-1 bg-black text-white rounded gamer-font">CREATIVE</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Connect Section -->
-    <section id="connect" class="py-16 bg-gray-900 pixel-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-primary mb-12 gamer-font">> CONNECT WITH ME</h2>
-            <div class="max-w-2xl mx-auto bg-black p-8 rounded-lg border-2 border-gray-800">
-                <p class="text-gray-300 mb-8">
-                    Looking for a competitive teammate or content collaboration? 
-                    Reach out through any of these platforms:
-                </p>
-                <div class="flex justify-center space-x-6 mb-8">
-                    <a href="#" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-black transition">
-                        <i class="fab fa-twitch text-2xl"></i>
-                    </a>
-                    <a href="#" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-black transition">
-                        <i class="fab fa-youtube text-2xl"></i>
-                    </a>
-                    <a href="#" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-black transition">
-                        <i class="fab fa-discord text-2xl"></i>
-                    </a>
-                    <a href="#" class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-black transition">
-                        <i class="fab fa-steam text-2xl"></i>
-                    </a>
-                </div>
-                <div class="mt-6">
-                    <p class="text-gray-400 mb-2 gamer-font text-sm">FOR BUSINESS INQUIRIES:</p>
-                    <a href="mailto:dylan@griffiths.gaming" class="text-primary hover:underline gamer-font">dylan@griffiths.gaming</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+  
+  
     <!-- Footer -->
-    <footer class="bg-black text-gray-500 py-8 border-t-4 border-primary">
+    <footer class="bg-black text-white py-8 border-t-4 border-pixel-red">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0 gamer-font text-sm">
-                    <p>> DYLAN GRIFFITHS GAMING © 2023</p>
+                    <p>> DYLAN GRIFFITHS © 2023</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-pixel-red transition">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="#" class="hover:text-pixel-red transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="hover:text-pixel-red transition">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="hover:text-pixel-red transition">
+                        <i class="fab fa-steam"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            const navLinks = document.querySelector('.md\\:hidden + .md\\:flex');
+            if (navLinks) {
+                navLinks.classList.toggle('hidden');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
